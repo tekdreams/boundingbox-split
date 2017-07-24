@@ -1,0 +1,47 @@
+{
+  "dependencies": {
+    "mocha": "^3.4.2",
+    "underscore": "^1.8.3"
+  },
+  "name": "boundindbox-split",
+  "version": "1.0.0",
+  "main": "boxCutting.js",
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tekdreams/embed-url.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tekdreams/embed-url/issues"
+  },
+  "engines": {
+    "node": ">=4.2.4"
+  },
+  "keywords": [
+    "boundingbox",
+    "bounding-box",
+    "box",
+    "boxe",
+    "boxes",
+    "boundingboxes",
+    "bounding-boxes",
+    "geometry",
+    "coordinates",
+    "bbox",
+    "bboxes",
+    "map",
+    "maps",
+    "googleMaps",
+    "latitude",
+    "longitude",
+    "degrees",
+    "quadtile",
+    "quadtiles"
+  ],
+  "homepage": "https://github.com/tekdreams/embed-url#readme",
+  "author": "Galonde Matthieu <galonde.matthieu@gmail.com>",
+  "license": "ISC",
+  "description": "Split a bounding box into 4^n equal smaller bounding boxes"
+}

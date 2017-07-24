@@ -2,7 +2,7 @@ const createSmallBox = require(__dirname + '/boxTools').createSmallBox,
 boxError = require(__dirname + '/utils').boxError;
 
 const validBoxParameters = boxParameters => {
-	let validBox = true
+	var validBox = true
 	if (boxParameters && boxParameters.centerLat && boxParameters.centerLng && boxParameters.maxLat 
 		&& boxParameters.minLat && boxParameters.maxLng && boxParameters.minLng) {
 		for (let key in boxParameters) {

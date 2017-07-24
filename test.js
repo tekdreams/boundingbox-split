@@ -1,4 +1,4 @@
-const boundingBoxCutting = require(__dirname + '/BoxCutting').boundingBoxCutting;
+const boundingBoxCutting = require('./BoxCutting').boundingBoxCutting;
 
 const boxParameters = {
   centerLat : '2.352221900000177',

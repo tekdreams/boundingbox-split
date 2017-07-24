@@ -1,6 +1,5 @@
-const bbox = require('./BoxCutting.js');
+const bbox = require(__dirname + '/boxCutting').boundingBoxCutting;
 
-console.log()
 const boxParameters = {
   centerLat : '2.352221900000177',
   centerLng : 48.856614,
@@ -12,7 +11,7 @@ const boxParameters = {
 
   describe('Test BoxCutting', function() {
     it('should call boundingBoxCutting endpoint', () => {
-      return bbox.boundingBoxCutting(boxParameters, 2)
+      return bbox(boxParameters, 2)
       .then(boxes => console.log(boxes))
       .catch(error => console.log(error))
     });

@@ -1,6 +1,6 @@
-[![Build Status](https://travis-ci.org/tekdreams/boundindbox-split.svg?branch=master)](https://travis-ci.org/tekdreams/boundindbox-split)
+[![Build Status](https://travis-ci.org/tekdreams/boundingbox-split.svg?branch=master)](https://travis-ci.org/tekdreams/boundingbox-split)
 
-Boundindbox-split
+Boundingbox-split
 =================
 
 A Node.js script that for splitting a bounding box into 4^n equal smaller bounding boxes.
@@ -15,20 +15,20 @@ Node.js - Version >=4.3.2
 Use npm:
 
 ```
-$ npm install boundindbox-split --save
+$ npm install boundingbox-split --save
 ```
 Or you can clone and install HEAD:
 
 ```
-git clone https://github.com/tekdreams/boundindbox-split.git
-cd boundindbox-split
+git clone https://github.com/tekdreams/boundingbox-split.git
+cd boundingbox-split
 npm install
 ```
 
 ## Getting Started
 
 ```
-const boundingBoxCutting = require(__dirname + '/BoxCutting').boundingBoxCutting;
+const bbox = require(boundingbox-split);
 ```
 
 The method boundingBoxCutting takes two parameters:
@@ -38,12 +38,12 @@ The method boundingBoxCutting takes two parameters:
 - The coordinates of the main bounding box to split
 ```
 const boxParameters = {
-  centerLat : 'Box Coordinate',
-  centerLng : 'Box Coordinate',
-  maxLat : 'Box Coordinate',
-  minLat : 'Box Coordinate',
-  maxLng : 'Box Coordinate',
-  minLng : 'Box Coordinate'
+  centerLat : centerLat box coordinate,
+  centerLng : centerLng box coordinate,
+  maxLat : maxLat box coordinate,
+  minLat : minLat box coordinate,
+  maxLng : maxLng box coordinate,
+  minLng : minLng box coordinate
 }
 ```
 
@@ -65,7 +65,7 @@ This wrapper utilizes ES6 Promises to handle the API calls.
 To split a bounding box into 4^n use the following...
 
 ```
-boundingBoxCutting(boxParameters, n)
+bbox.boundingBoxCutting(boxParameters, n)
 .then(result => console.log(result))
 .catch(error => console.log(error))
 ```
@@ -98,4 +98,4 @@ In lieu of a formal style guide, take care to maintain the existing coding style
 
 ## License
 
-Copyright © 2017 Tekdreams. [ISC Licensed](LICENSE).
+Copyright © 2017 Tekdreams. [MIT Licensed](LICENSE).

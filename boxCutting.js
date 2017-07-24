@@ -1,4 +1,4 @@
-const createSmallBox = require(__dirname + '/boxTools-copie').createSmallBox,
+const createSmallBox = require(__dirname + '/boxTools').createSmallBox,
 boxError = require(__dirname + '/utils').boxError;
 
 const validBoxParameters = boxParameters => {

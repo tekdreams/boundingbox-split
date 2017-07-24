@@ -1,3 +1,4 @@
+"use strict"
 const bbox = require(__dirname + '/boxCutting').boundingBoxCutting;
 
 const boxParameters = {

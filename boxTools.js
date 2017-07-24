@@ -1,3 +1,4 @@
+"use strict"
 const _ = require('underscore')
 
 const getBoundingBox = (boundingCenter, center, upperLeft, upperRight, lowerLeft, lowerRight) => {
